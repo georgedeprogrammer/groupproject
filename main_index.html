@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AIRPORT SYSTEM</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <nav class="navigation">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('home') }}">Customer</a></li>
+                <li><a href="{{ url_for('signin') }}">Login</a></li>
+                <li><a href="{{ url_for('show_form', form_name='register') }}">Register</a></li>
+                <li><a href="{{ url_for('show_form', form_name='Flight Booking') }}">Flight Booking</a></li>
+                <li><a href="{{ url_for('show_form', form_name='Online CheckIn') }}">Online CheckIn</a></li>
+            </ul>
+        </nav>
+
+       <!-- 1. HERO / WELCOME SECTION -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="subtitle">WELCOME ABOARD</p>
+        <h1>Your Journey Begins With Us</h1>
+        <p>
+            Discover exciting destinations, enjoy convenient travel services,
+            and let us help you make every journey memorable.
+        </p>
+
+        <a href="/forms/Flight%20Booking" class="btn">
+            Book a Flight
+        </a>
+
+        <a href="#destinations" class="btn btn-outline">
+            Explore Destinations
+        </a>
+    </div>
+</section>
+
+
+<!-- 2. POPULAR DESTINATIONS -->
+<section id="destinations" class="section">
+    <h2>Explore Popular Destinations</h2>
+    <p class="section-intro">
+        Discover new places and start planning your next adventure.
+    </p>
+
+    <div class="destination-container">
+
+        <div class="destination-card">
+            <img src="{{ url_for('static', filename='images/nairobi.jpg') }}"
+                 alt="Nairobi city">
+            <h3>Nairobi, Kenya</h3>
+            <p>Experience the vibrant capital of Kenya.</p>
+            <a href="/forms/Flight%20Booking">Plan Your Trip</a>
+        </div>
+
+        <div class="destination-card">
+            <img src="{{ url_for('static', filename='images/mombasa.jpg') }}"
+                 alt="Mombasa coastline">
+            <h3>Mombasa, Kenya</h3>
+            <p>Discover beautiful beaches and coastal culture.</p>
+            <a href="/forms/Flight%20Booking">Plan Your Trip</a>
+        </div>
+
+        <div class="destination-card">
+            <img src="{{ url_for('static', filename='images/dubai.jpg') }}"
+                 alt="Dubai skyline">
+            <h3>Dubai, UAE</h3>
+            <p>Explore a city famous for its modern attractions.</p>
+            <a href="/forms/Flight%20Booking">Plan Your Trip</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- 3. WHY TRAVEL WITH US -->
+<section id="why-us" class="section why-us">
+    <h2>Why Travel With Us?</h2>
+    <p class="section-intro">
+        We aim to make planning and managing your journey easier.
+    </p>
+
+    <div class="features-container">
+
+        <div class="feature-card">
+            <h3>Easy Flight Booking</h3>
+            <p>Submit your flight details through our online booking form.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Convenient Online Services</h3>
+            <p>Access ticket checking and online check-in services.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Customer Support</h3>
+            <p>Send enquiries and report travel-related issues.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Parcel Services</h3>
+            <p>Submit parcel details conveniently through our website.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- 4. ABOUT OUR AIRLINE -->
+<section id="about" class="section about-section">
+    <div class="about-content">
+        <h2>About Our Airline</h2>
+
+        <p>
+            Welcome to our airline website, where technology meets travel.
+            Our goal is to provide passengers with convenient online tools
+            for managing essential travel services.
+        </p>
+
+        <p>
+            Through our airport management system, users can submit flight
+            bookings, check ticket details, access online check-in,
+            and make enquiries through one platform.
+        </p>
+
+        <h3>Our Mission</h3>
+        <p>
+            To make essential travel services more accessible through
+            convenient and user-friendly digital solutions.
+        </p>
+
+        <h3>Our Vision</h3>
+        <p>
+            To become a trusted digital platform for convenient travel
+            and airport service management.
+        </p>
+    </div>
+</section>
+
+
+<!-- 5. QUICK TRAVEL SERVICES -->
+<section id="services" class="section">
+    <h2>Explore Our Services</h2>
+    <p class="section-intro">
+        Find the service you need and get started.
+    </p>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <h3>Flight Booking</h3>
+            <p>Submit your departure and destination details.</p>
+            <a href="/forms/Flight%20Booking">Book Flight</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Ticket Checking</h3>
+            <p>Enter your ticket information to check your ticket.</p>
+            <a href="/forms/Ticket%20Checking">Check Ticket</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Online Check-in</h3>
+            <p>Submit your passenger and ticket details.</p>
+            <a href="/forms/Online%20CheckIn">Check In</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Parcel Sending</h3>
+            <p>Submit the details of a parcel you want to send.</p>
+            <a href="/forms/Parcel%20Sending">Send Parcel</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Report an Issue</h3>
+            <p>Tell us about a problem or concern.</p>
+            <a href="/forms/Report%20Issue">Report Issue</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Contact Us</h3>
+            <p>Send us a question or request for assistance.</p>
+            <a href="/forms/Contact">Contact Us</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- 6. TRAVEL TIPS AND INFORMATION -->
+<section id="travel-tips" class="section tips-section">
+    <h2>Travel Tips and Information</h2>
+    <p class="section-intro">
+        Prepare for a smoother journey with these helpful reminders.
+    </p>
+
+    <div class="tips-container">
+
+        <article class="tip-card">
+            <h3>Prepare Your Travel Documents</h3>
+            <p>
+                Check that your identification, passport, and other
+                required travel documents are valid before departure.
+            </p>
+        </article>
+
+        <article class="tip-card">
+            <h3>Arrive at the Airport Early</h3>
+            <p>
+                Allow sufficient time for check-in, security screening,
+                and finding your departure gate.
+            </p>
+        </article>
+
+        <article class="tip-card">
+            <h3>Understand Baggage Requirements</h3>
+            <p>
+                Review your airline's baggage allowance and restrictions
+                before packing.
+            </p>
+        </article>
+
+        <article class="tip-card">
+            <h3>Confirm Your Flight Details</h3>
+            <p>
+                Review your booking, departure date, and destination
+                before travelling.
+            </p>
+        </article>
+
+    </div>
+</section>
+        
+    </body>
+</html>

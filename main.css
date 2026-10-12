@@ -1,0 +1,40 @@
+body {
+    background-color: whitesmoke;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 25px;
+    overflow: hidden;
+    background-color: #6d6c6c;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: left;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #848181;
+}
+ul a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul a:hover {
+    background-color: #1d4ed8;
+    border-radius: 5px;
+}
+.hero {
+    background-color: aliceblue;
+    align-items: center;
+}

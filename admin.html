@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin @AfriTrans</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">BACK</a></li>
+            <li><a>Schedule Meeting</a></li>
+            <li><a>Memo</a></li>
+        </ul>
+    </nav>
+    <div class="admin-dashboard">
+        <div class="dashboard-card">
+            <div class="card-icon">
+                ✈️
+            </div>
+            <h2>Flight Booking Records</h2>
+            <p>View and manage flight booking records</p>
+        </div>
+        <div class="dashboard-card">
+            <div class="card-icon">
+                📢
+            </div>
+            <h2>Report Check</h2>
+            <p>Report any issues you encounter</p>
+        </div>
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!-- Icon for ticket checking -->
+                🎫
+            </div>
+            <h2>Ticket Report</h2>
+            <p>Check and manage flight ticket report</p>
+        </div>
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!---Security Clearance-->
+                🛂
+            </div>
+            <h2>Security Clearance Report</h2>
+            <p>Check your security clearance status</p>
+        </div>
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!---Service Vendor--->
+                🛠️
+            </div>
+            <h2>Service Vendor Report</h2>
+            <p>Check your service vendor report</p>
+        </div>
+        
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!---Parcel Sending-->
+                📦
+            </div>
+            <h2>Parcel Sending</h2>
+            <p>Send your parcels with AirTrans</p>
+        </div>
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!-- Icon for newsletter subscription -->
+                📰
+            </div>
+            <h2>Update & Review Newsletter</h2>
+            <p>Newsletter subscription and review</p>
+        </div>
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!--Add Employee-->
+            </div>
+             <h2>New Employee</h2>
+            <p>Add the new employee into the system</p>
+        </div>
+    </div>
+     
+</body>
+</html>

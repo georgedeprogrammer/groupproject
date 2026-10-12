@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers Page</title>
+    <link rel="stylesheet" href="cardicon.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='cardicon.css') }}">
+</head>
+<body>
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>AirTrans</h1>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('signin') }}">SignIn</a></li>
+                    <li><a href="{{ url_for('show_form', form_name='login') }}">Register/SignUp</a></li>
+                    <li><a href="{{ url_for('show_form', form_name='Contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+   <div class="dashboard-grid">
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!-- Icon for flight booking -->
+                ✈️
+            </div>
+            <h2>Flight Booking</h2>
+            <p>Book A flight with AirTrans</p>
+            <a href="{{ url_for('show_form', form_name='Flight Booking') }}">Book A flight</a>
+        </div>
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!-- Icon for online check-in -->
+                🛫
+            </div>
+            <h2>Online Check-in</h2>
+            <p>Check-in for your flight online</p>
+            <a href="{{ url_for('show_form', form_name='Online CheckIn') }}">CheckIn</a>
+        </div>
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!-- Icon for reporting issues -->
+                📢
+            </div>
+            <h2>Report Issue</h2>
+            <p>Report any issues you encounter</p>
+            <a href="{{ url_for('show_form', form_name='Report Issue') }}">Express satisfactions and frustrations</a>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!-- Icon for ticket checking -->
+                🎫
+            </div>
+            <h2>Ticket Checking</h2>
+            <p>Check your flight tickets</p>
+            <a href="{{ url_for('show_form', form_name='Ticket Checking') }}">Check Your Ticket</a>
+        </div>
+        
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!---Parcel Sending-->
+                📦
+            </div>
+            <h2>Parcel Sending</h2>
+            <p>Send your parcels with AirTrans</p>
+            <a href="{{ url_for('show_form', form_name='Parcel Sending') }}">Send Parcel via AirTrans</a>
+        </div>
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!-- Icon for newsletter subscription -->
+                📰
+            </div>
+            <h2>Get Newsletter</h2>
+            <p>Subscribe to our newsletter</p>
+            <a href="{{ url_for('show_form', form_name='Get Newsletter') }}">Updated Newsletter</a>
+        </div>
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!-- Icon for customer registration -->
+                📝
+            </div>
+            <h2>Register/SignUp</h2>
+            <p>Register as a new customer</p>
+            <a href="{{ url_for('show_form', form_name='customer') }}">Register With Us</a>
+        </div>
+    </div>
+</body>
+</html>

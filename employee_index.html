@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLOYEE @ AfriTrans</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='employee.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('show_form', form_name='Get Newsletter') }}">Get Newsletter</a></li>
+            <li><a>Reports</a></li>
+            <li><a href="{{ url_for('show_form', form_name='customer') }}">Reister/SignUp Customer</a></li>
+            <li><a href="{{ url_for('signin') }}">SignIn Customer</a></li>
+        </ul>
+    </nav>
+    <div class="dashboard">
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!-- Icon for flight booking -->
+                ✈️
+                <h2>Flight Booking </h2>
+                <p>Book a flight</p>
+            </div>
+            
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!-- Report Issue -->
+                📢
+                <h2>Report Issue</h2>
+                <p>Report an insidence or a case to management</p>
+            </div>
+        </div>
+        <div class="dashboard-card">
+            <div class="card-icon">
+                🎫
+                <h2>Ticket Checking</h2>
+                <p>Verify and confirm indeed a ticket was booked</p>
+            </div>
+        </div>
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!---Security Clearance-->
+                🛂
+                <h2>Security Clearance</h2>
+                <p>security clearance status</p>
+            </div>
+        </div>
+        <div class="dashboard-card">
+            <div class="card-icon">
+                <!---Service Vendor--->
+                🛠️
+                <h2>Service Vendor</h2>
+                <p>Service provider checking and input</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

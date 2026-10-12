@@ -1,0 +1,108 @@
+
+/* Customers dashboard card */
+.dashboard-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon */
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+/* Card title */
+.dashboard-card h2 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.dashboard-card p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.card-button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #1d4ed8;
+}
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    padding: 20px;
+    align-items: stretch;
+}
+
+.dashboard-card {
+    width: auto;
+    box-sizing: border-box;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background-color: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    align-items: left;
+}
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: left;
+}
+ul li {
+    margin-right: 20px;
+}
+ul li a {
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-items: left;
+}
+ul li a:hover {
+    background-color: #2563eb;
+    color: white;
+}
+.nav-links {
+    display: flex;
+    align-items: left;
+    gap: 15px;
+}
+.dashboard-grid a:hover {
+    background-color: #2563eb;
+    color: white;
+    text-decoration: underline;
+}
+.dashboard-grid a {
+    cursor: pointer;
+}
